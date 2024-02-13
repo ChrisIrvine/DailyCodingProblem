@@ -32,7 +32,7 @@ def dynamic_max (inputArray):
 def constant_max (inputArray):
     incl, excl, = inputArray[0], 0
     # iterate over the array, adding the inclusive value to the temporary value or discarding it 
-    # in favor of the larger exlusive value
+    # in favor of the larger exclusive value
     for i in range(1, len(inputArray)):
         tmp, excl = excl + inputArray[i], max(incl, excl)
         incl = tmp
